@@ -7,15 +7,18 @@
     <title>Pokedex</title>
     <script src="./main.js" type="text/javascript" defer></script>
     <link rel="stylesheet" href="./style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;1,400&display=swap');
+    </style>
 </head>
 <body>
     <form action="" onsubmit="buscarPokemon(event)">
-    <input type="text" name="pokemon" autocomplete="off">
+    <input type="text" name="pokemon" autocomplete="off" placeholder="¿Quién es este pokemón?">
     </form>
     <div id="tarjetaPokemon" class="pokeTarjetaStyle">
         <div id="pokeName" class="pokeNameStyle">¿Quién es este pokemón?</div>
-        <div id="pokeImagenContainer" class="pokeImagenContainer">
-            <img id="pokeImagen" src="./assets/cual.webp" alt="¿Quién es este pokemon?">
+        <div id="pokeImagenContainer" class="pokeImagenContainerStyle">
+            <img id="pokeImagen" src="./assets/egg.png" class= "pokeImagenStyle" alt="¿Quién es este pokemon?">
         </div>
         <div id="pokeId"></div>
         <div id="pokeTipo" class="pokeTipoStyle"></div>
